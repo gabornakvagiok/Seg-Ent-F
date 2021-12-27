@@ -1,0 +1,694 @@
+
+.tipoLetra1{font-family: 'PT Mono', monospace;
+	font-family: 'PT Serif', serif;
+	}
+.centradoTexto{
+	text-align: center;
+}
+.gradiant{
+	background-image: linear-gradient(rgb(245, 23, 160),rgb(245, 86, 23));
+}
+
+
+/* INICIO MEDIA QUERY DESCKTOP */
+/*INICIO INDEX DESKTOP */
+@media only screen and (min-width: 1024px){
+
+	.gridContainerPadreIndex{
+		display: grid; 
+		grid-template-areas:
+		"header header header"
+		"main main main"
+		"img img img"
+		"footer footer footer";
+		grid-template-columns: 33% 33% 33%;
+		grid-template-rows: 8% 70% 15% 5%;
+	}			
+	.headerIndex{
+  display: flex;
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  padding: 0; 
+  background-color: rgb(245, 23, 160);
+
+	}
+.mainIndex{
+ grid-area: main;
+ width: 100%;
+ height: 100%;
+	}
+.footerIndex{
+ grid-area: footer;
+ padding-bottom: 0%;
+ margin-bottom: 0%;
+ background-color: black;
+	}
+nav ul li a{
+		text-decoration: none;
+		color:black;
+	   }
+ li{ 
+ display: flex;
+ list-style-type: none;
+ padding: 25px;
+ font-size: 25px;
+ display: inline;
+ justify-content: end;
+}
+.logoPast{
+	transition: all 5s;
+}
+
+.logoPast:hover{
+	transform: translateY(150);
+}
+.redes-sociales {
+	text-align: center;
+}
+
+.redes-sociale li{
+    display: inline-block;
+	margin:0 !important;
+	padding:0;
+}
+
+ /* FIN INDEX DESKTOP */
+
+ /* INICIO CONTACTO DESKTOP */
+	.gridContainerPadreContacto{
+		display: grid; 
+		grid-template-areas:
+		"header header header"
+		"main main main"
+		"img img img"
+		"footer footer footer";
+		grid-template-columns: 33% 33% 33%;
+		grid-template-rows: 4% 33% 30% 20%;
+	}
+   .headerContacto{
+   display: flex;
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  padding: 0; 
+  background-color: rgb(245, 23, 160);
+  }
+  .mainContacto{
+  grid-area: main;
+  }
+  .footerContacto{
+  grid-area: footer;
+  background-color: black;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  }
+	
+
+	/* FIN CONTACTO DESKTOP */
+
+	/* INICIO NOSOTROS DESCKTOP */
+	.gridContainerPadreNosotros{
+ 	display: grid; 
+ 	grid-template-areas:
+ 	"header header header"
+ 	"main main main"
+ 	"img img img"
+ 	"footer footer footer";
+ 	grid-template-columns: 33% 33% 33%;
+ 	grid-template-rows: 5% 33% 30% 20%;
+	}
+	header{
+ 	display: flex;
+	 grid-area: header;
+ 	position: sticky;
+ 	top: 0;
+ 	padding: 10px; 
+ 	background-color: rgb(245, 23, 160);
+	}
+			  
+	nav{
+ 	grid-area: nav;
+ 	color: blue;
+	}
+	main{
+ 	grid-area: main;
+	} 
+	.img{
+ 	grid-area: img;
+	}
+	footer{
+ 	grid-area: footer;
+	}
+ 	nav ul li a{
+ 	
+	}
+	li{
+ 	list-style-type: none;
+ 	padding: 20px;
+ 	font-size: 25px;
+	}
+	ul{
+	 display: flex;
+ 	justify-content: right;
+	}
+	
+	/* FIN NOSOTROS DESCKTOP */
+	/* INICIO PRODUCTOS DESKTOP */
+	.gridContainerPadreProductos{
+		display: grid; 
+		grid-template-areas:
+		"header header header"
+		"main main main"
+		"img img img"
+		"footer footer footer";
+		grid-template-columns: 33% 33% 33%;
+		grid-template-rows: 10% 30% 30% 20%;
+   }
+   header{
+	display: flex;
+	grid-area: header;
+	position: sticky;
+	top: 0;
+	padding: 0px; 
+	background-color: rgb(245, 23, 160);
+   }			 
+   nav{
+	grid-area: nav;
+   }
+   main{
+	grid-area: main;
+   } 
+   .img{
+	grid-area: img;
+   }
+   footer{
+	grid-area: footer;
+	
+   }
+	nav ul li a{
+	
+   }
+   li{
+	list-style-type: none;
+	padding: 20px;
+	font-size: 25px;
+   }
+   ul{
+	display: flex;
+	justify-content: right;
+   }
+ 
+ div main h3{
+	display: flex;
+	text-align: center;
+ }
+ /* FIN PRODUCTOS DESCKTOP */
+
+ /* INICIO SERVICIOS DESCKTOP */
+	.gridContainerPadreServicios{
+		display: grid; 
+		grid-template-areas:
+		"header header header"
+		"main main main"
+		"img img img"
+		"footer footer footer";
+		grid-template-columns: 33% 33% 33%;
+		grid-template-rows: 5% 30% 30% 20%;
+   }
+   header{
+	display: flex;
+	grid-area: header;
+	position: sticky;
+	top: 0;
+	padding: 0px; 
+	background-color: rgb(245, 23, 160);
+   }			 
+   nav{
+	grid-area: nav;
+   }
+   main{
+	grid-area: main;
+   } 
+   .img{
+	grid-area: img;
+   }
+   footer{
+	grid-area: footer;
+   }
+	nav ul li a{
+	
+   }
+   li{
+	list-style-type: none;
+	padding: 20px;
+	font-size: 25px;
+   }
+   ul{
+	display: flex;
+	justify-content: right;
+   }
+		
+}
+/* FIN SERVICIOS DESKTOP */
+/* FIN MEDIAQUERY DESCKTOP */
+
+/* -------------------------------------------------- */
+/* INICIO MEDIAQUERY TABLET */
+
+/*INICIO INDEX TABLET */
+
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+	
+ .gridContainerPadreIndex{
+    display: grid; 
+    grid-template-areas:
+   "header header"
+   "main main" 
+   "footer footer";
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 13% 1fr 20%;
+	}			
+	header{
+ display: flex;
+ grid-area: header;
+ position: sticky;
+ top: 0;
+ padding: 10px; 
+ background-color: rgb(224, 139, 11);
+	}
+	main{
+ grid-area: main;
+	}
+	footer{
+ grid-area: footer;
+	}
+	a{
+ text-decoration: none;
+ color: rgb(230, 11, 11);
+	}
+ li{ 
+ display: flex;
+ list-style-type: none;
+ padding: 20px;
+ font-size: 25px;
+ display: inline;
+ justify-content: end;
+	}
+ 
+ /* FIN INDEX TABLET */
+
+/* INICIO CONTACTO TABLET */
+ .gridContainerPadreContacto{
+    display: grid; 
+    grid-template-areas:
+   "header header"
+   "main main" 
+   "footer footer";
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 13% 1fr 20%;
+	}
+   header{
+   grid-area: header;
+  }
+  main{
+  grid-area: main;
+  }
+  footer{
+  grid-area: footer;
+  }
+  a{
+	text-decoration: none;
+	color: rgb(230, 11, 11);
+	   }
+	li{ 
+	display: flex;
+	list-style-type: none;
+	padding: 20px;
+	font-size: 25px;
+	display: inline;
+	justify-content: end;
+	   }
+	.gridContainerPadre{
+	position: sticky;
+    top: 100;
+    padding: 0px; 
+    background-color: rgb(79, 12, 187);
+	}  
+	
+ /* FIN CONTACTO TABLET */
+
+ /* INICIO NOSOTROS TABLET */
+ .gridContainerPadreNosotros{
+    display: grid; 
+    grid-template-areas:
+   "header header"
+   "main main" 
+   "footer footer";
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 13% 1fr 20%;
+	}
+   header{
+   grid-area: header;
+  }
+  main{
+  grid-area: main;
+  }
+  footer{
+  grid-area: footer;
+  }
+  a{
+	text-decoration: none;
+	color: rgb(230, 11, 11);
+	   }
+	li{ 
+	display: flex;
+	list-style-type: none;
+	padding: 20px;
+	font-size: 25px;
+	display: inline;
+	justify-content: end;
+	   }
+	.gridContainerPadre{
+	
+  position: sticky;
+  top: 100;
+  padding: 10px; 
+  background-color: rgb(79, 12, 187);
+	}  
+ /* FIN NOSOTROS TABLET */
+
+
+ /* INICIO PRODUCTOS TABLET */
+ .gridContainerPadreProductos{
+	display: grid; 
+    grid-template-areas:
+   "header header"
+   "main main" 
+   "footer footer";
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 13% 1fr 20%;
+  }
+   header{
+	display: flex;
+	grid-area: header;
+	position: sticky;
+	top: 0;
+	padding: 0px; 
+	background-color: rgb(245, 23, 160);
+   }			 
+   nav{
+	grid-area: nav;
+   }
+   main{
+	grid-area: main;
+   } 
+   .img{
+	grid-area: img;
+   }
+   footer{
+	grid-area: footer;
+	background-color: black;
+   }
+	nav ul li a{
+	color: rgb(67, 209, 39);;
+   }
+   li{
+	list-style-type: none;
+	padding: 20px;
+	font-size: 25px;
+   }
+   ul{
+	display: flex;
+	justify-content: right;
+   }
+ 
+ div main h3{
+	display: flex;
+	text-align: center;
+ }
+
+ /* FIN PRODUCTOS TABLET */
+
+
+ /*INICIO SERVICIOS TABLET*/
+ .gridContainerPadreServicios{
+	display: grid; 
+    grid-template-areas:
+   "header header"
+   "main main" 
+   "footer footer";
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 13% 1fr 20%;
+   }
+   header{
+	display: flex;
+	grid-area: header;
+	position: sticky;
+	top: 0;
+	padding: 0px; 
+	background-color: rgb(245, 23, 160);
+   }			 
+   nav{
+	grid-area: nav;
+   }
+   main{
+	grid-area: main;
+   } 
+   .img{
+	grid-area: img;
+   }
+   footer{
+	grid-area: footer;
+	background-color: black;
+   }
+	nav ul li a{
+	color: rgb(67, 209, 39);;
+   }
+   li{
+	list-style-type: none;
+	padding: 20px;
+	font-size: 25px;
+   }
+   ul{
+	display: flex;
+	justify-content: right;
+   }
+	
+		
+ 
+ /*FIN SERVICIOS TABLET*/ 
+
+}
+/* FIN MEDIAQUERY TABLET */
+
+
+/* ------------------------------------------------------- */
+
+
+/* INICIOMEDIAQUERY MOBILE */
+/*INICIO INDEX MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 768px){
+	
+	.gridContainerPadreIndex{
+		display: grid; 
+		grid-template-areas:
+	   "header"
+	   "main " 
+	   "footer";
+		grid-template-columns: 100%;
+		grid-template-rows: 13% 1fr 1fr;
+		}
+	    logo{
+	grid-area: logo;
+		}			
+		header{
+	 display: flex;
+	 grid-area: header;
+	 position: sticky;
+	 top: 0;
+	 padding: 0px; 
+	 background-color: rgb(224, 139, 11);
+		}
+		main{
+	 grid-area: main;
+	
+		}
+		footer{
+	 grid-area: footer;
+		}
+		a{
+	 text-decoration: none;
+	 color: rgb(230, 11, 11);
+		}
+	 li{ 
+	 display: flex;
+	 list-style-type: none;
+	 padding: 5px;
+	 font-size: 15px;
+	 display: inline;
+	 justify-content: end;
+		}
+	
+	 /* FIN INDEX MOBILE */
+
+	 /* INICIO CONTACTO MOBILE */
+	 .gridContainerPadreContacto{
+		display: grid; 
+		grid-template-areas:
+		"header"
+		"main" 
+		"footer";
+		grid-template-columns: 100%;
+		grid-template-rows: 5% 1fr 1fr;
+		}
+	   header{
+	   grid-area: header;
+	  }
+	  main{
+	  grid-area: main;
+	  }
+	  footer{
+	  grid-area: footer;
+	  }
+		.gridContainerPadre{
+		
+	     position: sticky;
+	  		top: 100;
+	  		padding: 10px; 
+	  		background-color: rgb(79, 12, 187);
+		} 
+	    a{
+			text-decoration: none;
+			color: rgb(230, 11, 11);
+		}
+		li{ 
+			display: flex;
+			list-style-type: none;
+			padding: 5px;
+			font-size: 15px;
+			display: inline;
+			justify-content: end;
+		}
+		
+		
+		
+		/* FIN CONTACTO MOBILE */
+	
+	/* INICIO NOSOTROS MOBILE */
+	.gridContainerPadreNosotros{
+		display: grid; 
+		grid-template-areas:
+	   "header"
+	   "main" 
+	   "footer";
+		grid-template-columns: 100%;
+		grid-template-rows: 5% 1fr 1fr;
+		}			
+		header{
+	 display: flex;
+	 grid-area: header;
+	 position: sticky;
+	 top: 0;
+	 padding: 0px; 
+	 background-color: rgb(224, 139, 11);
+		}
+		main{
+	 grid-area: main;
+	 width: 768px;
+		}
+		footer{
+	 grid-area: footer;
+		}
+		a{
+	 text-decoration: none;
+	 color: rgb(230, 11, 11);
+		}
+	 li{ 
+	 display: flex;
+	 list-style-type: none;
+	 padding: 5px;
+	 font-size: 15px;
+	 display: inline;
+	 justify-content: end;  
+	 }
+	   /* FIN NOSOTROS MOBILE */
+
+	   /* INICIO PRODUCTOS MOBILE */
+	   .gridContainerPadreProductos{
+		display: grid; 
+		grid-template-areas:
+	   "header"
+	   "main" 
+	   "footer";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 5% 1fr 1fr;
+		}			
+		header{
+	 display: flex;
+	 grid-area: header;
+	 position: sticky;
+	 top: 0;
+	 padding: 0px; 
+	 background-color: rgb(224, 139, 11);
+		}
+	   main{
+	 grid-area: main;
+		}
+		footer{
+	 grid-area: footer;
+		}
+	   a{
+	 text-decoration: none;
+	 color: rgb(230, 11, 11);
+		}
+	 li{ 
+	 display: flex;
+	 list-style-type: none;
+	 padding: 5px;
+	 font-size: 15px;
+	 display: inline;
+	 justify-content: end;  
+	 }
+
+	    
+	   /* FIN PRODUCTOS MOBILE */ 
+	   /* INICIO SERVICIOS MOBILE */
+	   .gridContainerPadreServicios{
+		display: grid; 
+		grid-template-areas:
+	   "header"
+	   "main" 
+	   "footer";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 5% 1fr 1fr;
+		}			
+		header{
+	 display: flex;
+	 grid-area: header;
+	 position: sticky;
+	 top: 0;
+	 padding: 0px; 
+	 background-color: rgb(224, 139, 11);
+		}
+	   main{
+	 grid-area: main;
+	 width: 768px;
+		}
+		footer{
+	 grid-area: footer;
+		}
+	   a{
+	 text-decoration: none;
+	 color: rgb(230, 11, 11);
+		}
+	 li{ 
+	 display: flex;
+	 list-style-type: none;
+	 padding: 5px;
+	 font-size: 15px;
+	 display: inline;
+	 justify-content: end;  
+	 }
+    /* Fin SERVICIOS MOBILE */
+}	
